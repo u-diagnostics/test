@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<!-- saved from url=(0133)https://covid19.u-diagnostics.com/test/validation/86553292?signature=441d9bf3957de8a51efd4ab9ec9127ede07510fea1a1bd72e512d3a0102d9488 -->
+<html lang="nl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test validatie - U-Diagnostics</title>
+    <link rel="stylesheet" href="./Test validatie - U-Diagnostics_files/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous">
+    <link href="./Test validatie - U-Diagnostics_files/css2" rel="stylesheet">
+
+    <style>
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .container {
+            max-width: 1170px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 70px;
+        }
+
+        header {
+            padding: 10px 20px;
+            background: #fff;
+        }
+
+        header img {
+            max-width: 120px;
+            height: auto;
+        }
+
+        header .payoff {
+            color: #2D3047;
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        section.results {
+            text-align: center;
+        }
+
+        section.results h1 {
+            font-size: 30px;
+            font-weight: bold;
+            color: #2D3047;
+            margin-top: 60px;
+            margin-bottom: 20px;
+        }
+
+        section.results h2 {
+            color: #0F0F0F;
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: normal;
+            max-width: 370px;
+            margin: 0 auto 20px;
+            display: block;
+        }
+
+        .result-rounded {
+            background: #16998B;
+            color: #fff;
+            border-radius: 40px;
+            min-height: 80px;
+            max-width: calc(100vw - 40px);
+            width: 770px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 24px;
+            margin-bottom: 15px;
+            padding: 10px 40px;
+            box-sizing: border-box;
+        }
+
+        .result-rounded.expired {
+            background: #FF8900;
+        }
+
+        .result-rounded.negative {
+            background: #E50025;
+        }
+
+        .result-rounded img {
+            width: 30px;
+            height: 30px;
+            margin-right: 15px;
+        }
+
+        .verify-block {
+            margin: 0 auto 25px;
+            max-width: calc(100vw - 40px);
+            width: 770px;
+            border-radius: 25px;
+            border: 1px solid #F0F2F7;
+            margin-bottom: 25px;
+        }
+
+        .verify-block .verify-heading {
+            border-bottom: 1px solid #F0F2F7;
+            padding: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: 600;
+            color: #2D3047;
+        }
+
+        .verify-block .verify-heading img {
+            margin-right: 10px;
+        }
+
+        .verify-block .verify-content {
+            padding: 24px;
+            min-height: 170px;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: space-around;
+        }
+
+        .verify-block .verify-content .verify-data {
+            width: 40%;
+            flex-grow: 1;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .verify-block .verify-content .verify-data .verify-label {
+            font-size: 18px;
+            font-weight: 600;
+            color: #707070;
+            margin-bottom: 10px;
+        }
+
+        .verify-block .verify-content .verify-data .verify-value {
+            font-size: 30px;
+            color: #2D3047;
+            font-weight: 600;
+        }
+
+        .follow-up {
+            margin: 0 auto 50px;
+            max-width: calc(100vw - 40px);
+            width: 770px;
+            background: #FFF2F4;
+            border: 1px solid #F8E7E9;
+            border-radius: 25px;
+        }
+
+        .follow-up .follow-up-header {
+            padding: 24px;
+            display: flex;
+            box-sizing: border-box;
+            align-items: center;
+            justify-content: center;
+            color: #E50025;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .follow-up .follow-up-header img {
+            margin-right: 10px;
+        }
+
+        .follow-up .follow-up-content {
+            border-top: 1px solid #F6D6DD;
+            color: #707070;
+            font-size: 16px;
+            line-height: 22px;
+            padding: 24px;
+        }
+
+        .follow-up .follow-up-content strong {
+            font-weight: 600;
+        }
+
+        @media  only screen and (max-width: 900px) {
+            header .payoff {
+                font-size: 16px;
+            }
+
+            section.results h2 {
+                font-size: 16px;
+            }
+
+            .result-rounded {
+                font-size: 16px;
+                line-height: 22px;
+                padding: 10px 30px;
+                min-height: 50px;
+            }
+
+            .result-rounded img {
+                width: 20px;
+                height: 20px;
+            }
+
+            .verify-block .verify-heading {
+                font-size: 16px;
+            }
+
+            .verify-block .verify-heading img {
+                width: 20px;
+                height: 20px;
+            }
+
+            .verify-block .verify-content .verify-data {
+                width: 100%;
+            }
+
+            .verify-block .verify-content .verify-data:not(:last-child) {
+                margin-bottom: 20px;
+            }
+
+            .verify-block .verify-content .verify-data .verify-label {
+                font-size: 16px;
+            }
+
+            .verify-block .verify-content .verify-data .verify-value {
+                font-size: 24px;
+                color: #16998B;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <img src="./Test validatie - U-Diagnostics_files/hcc_logo_web.svg" alt="">
+        <div class="payoff">COVID-19 Testen</div>
+    </div>
+</header>
+
+<section class="results">
+    <h1>Testvalidatie</h1>
+    <h2>Controleer of onderstaande gegevens overeenkomen met de persoon.</h2>
+
+                                        <div class="result-rounded">
+                    <img src="./Test validatie - U-Diagnostics_files/check-thin-white.svg" alt="">
+                    De test is succesvol herkend.
+                </div>
+                        </div>
+                                    
+                <div class="verify-block">
+                    <div class="verify-heading">
+                        <img src="./Test validatie - U-Diagnostics_files/certificate-check.svg" alt="">
+                        Controleer gegevens
+                    </div>
+
+                    <div class="verify-content">
+                        <div class="verify-data">
+                            <div class="verify-label">Identificatie:</div>
+                            <div class="verify-value">89533292</div>
+                        </div>
+                        <div class="verify-data">
+                            <div class="verify-label">Test:</div>
+                            <div class="verify-value">COVID-19 PCR test</div>
+                        </div>
+                        <div class="verify-data">
+                            <div class="verify-label">Afnamedatum:</div>
+                            <div class="verify-value">21-12-2020</div>
+                        </div>
+                        <div class="verify-data">
+                            <div class="verify-label">Geboortedatum:</div>
+                            <div class="verify-value">24-10-1988</div>
+                        </div>
+                    </div>
+                </div>
+                        
+    <div class="follow-up">
+        <div class="follow-up-header">
+            <img src="./Test validatie - U-Diagnostics_files/exclamation-mark-red.svg" alt="">
+            Vervolgacties
+        </div>
+        <div class="follow-up-content">
+            <p><strong>Wordt de test niet herkend of komen de gegevens niet overeen?</strong></p>
+            <br>
+            <p>Dan is het document niet geldig. </p>
+        </div>
+    </div>
+</section>
+
+
+</body></html>
